@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ru.netology</groupId>
-    <artifactId>statistics</artifactId>
+    <groupId>org.example</groupId>
+    <artifactId>Syndrome100</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -18,7 +18,7 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
-            <version>5.4.2</version>
+            <version>5.8.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -39,14 +39,21 @@
                 <version>0.8.5</version>
                 <executions>
                     <execution>
-                        <id>prepare-agent</id>
-                        <phase>initialize</phase>
+                        <id>prepare-agent-8485hf8r4h</id>
+                        <!--                        <phase>initialize</phase>-->
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <id>check</id>
+                        <id>report-jhb988</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>chek</id>
                         <phase>verify</phase>
                         <goals>
                             <goal>check</goal>
@@ -62,8 +69,6 @@
                                     <counter>INSTRUCTION</counter>
                                     <value>COVEREDRATIO</value>
                                     <minimum>1.0</minimum>
-                                </limit>
-                                <limit>
                                 </limit>
                             </limits>
                         </rule>
